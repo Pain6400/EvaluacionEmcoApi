@@ -4,6 +4,7 @@ import { ConfigModule } from '@nestjs/config';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 import { TasksModule } from './tasks/tasks.module';
+import { RolesModule } from './roles/roles.module';
 import { User } from './users/user.entity';
 import { Task } from './tasks/task.entity';
 import { Role } from './users/role.entity';
@@ -35,7 +36,7 @@ import { RolesController } from './roles/roles.controller';
     AuthModule,
     UsersModule,
     TasksModule,
-
+    RolesModule,
     // Configuración de JWT y autenticación
     PassportModule.register({ defaultStrategy: 'jwt' }),
     JwtModule.register({

@@ -1,7 +1,6 @@
 import { Controller, Post, Body } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { UsersService } from '../users/users.service';
-
 import * as bcrypt from 'bcrypt';
 
 @Controller('auth')
