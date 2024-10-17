@@ -9,6 +9,6 @@ import { Role } from '../users/role.entity';  // Ajusta la ruta si es necesario
   imports: [TypeOrmModule.forFeature([Role])],
   providers: [RolesService],
   controllers: [RolesController],
-  exports: [RolesService],  // Exporta el servicio si se necesita en otros módulos
+  exports: [RolesService, TypeOrmModule],  // Exporta el servicio si se necesita en otros módulos
 })
 export class RolesModule {}

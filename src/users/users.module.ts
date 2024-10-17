@@ -9,6 +9,6 @@ import { User } from './user.entity'; // Asegúrate de que esta sea la entidad c
   imports: [TypeOrmModule.forFeature([User])], // Importa el repositorio
   controllers: [UsersController], // Registra el controlador
   providers: [UsersService],
-  exports: [UsersService],
+  exports: [UsersService, TypeOrmModule],
 })
 export class UsersModule {}
